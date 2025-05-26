@@ -60,7 +60,7 @@ SELECT * FROM sightings WHERE location ILIKE '%pass%';
 -- Problem- 4
 SELECT * 
 FROM sightings s
-JOIN rangers r ON r.ranger_id=sighting_id;
+JOIN rangers r ON r.ranger_id=s.sighting_id;
 
 SELECT r.name
 FROM sightings s
